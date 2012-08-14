@@ -1,0 +1,27 @@
+# Mac OS X makefile for IRIXbasic
+# July 25, 2012
+# Created by Andrew Hazelden
+# Email andrew@andrewhazelden.com
+
+# compile tip: try using this command to compile and run the program:
+# make clean;make;./irixbasic
+
+
+INCLUDE = -I/opt/local/Library/Frameworks/SDL.framework/Headers -I/opt/local/Library/Frameworks/SDL_ttf.framework/Headers -I/opt/local/Library/Frameworks/SDL_gfx.framework/Headers
+LIBDIR = 
+COMPILERFLAGS =
+
+CC = gcc
+CFLAGS = $(COMPILERFLAGS) $(INCLUDE)
+LIBRARIES =  -framework Cocoa -framework SDL -framework SDL_ttf -framework SDL_gfx  
+
+all:  irixbasic
+
+irixbasic : irixbasic.o
+	$(CC) $(CFLAGS) irixbasic.c ubasic.c tokenizer.c SDLmain.m $(LIBRARIES) -o irixbasic
+ 
+clean:
+	rm irixbasic *.o
+	
+go: clean irixbasic
+	./irixbasic

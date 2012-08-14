@@ -1,0 +1,27 @@
+# IRIXbasic Version 1.0 makefile for IRIX 6.5
+# July 2012
+# Created by Andrew Hazelden
+# Email andrew@andrewhazelden.com
+
+INCLUDE = -I/usr/nekoware/include/SDL
+LIBDIR  = -L/usr/nekoware/lib -L/usr/lib32/
+
+#COMPILERFLAGS =  `sdl-config --cflags --libs`
+
+CC = /usr/nekoware/bin/gcc
+CFLAGS = $(COMPILERFLAGS) $(INCLUDE)
+LIBRARIES = -lSDL -lSDL_gfx -lSDL_ttf -lm
+
+
+all:  irixbasic
+
+irixbasic : irixbasic.o
+	$(CC) $(CFLAGS) -o irixbasic  ubasic.c irixbasic.c tokenizer.c $(LIBDIR) $(LIBRARIES)
+ 
+
+clean:
+	rm irixbasic *.o
+	
+
+go: clean irixbasic
+	./irixbasic

@@ -1,0 +1,29 @@
+# IRIXbasic Version 1.0 makefile for Linux
+# July 2012
+# Created by Andrew Hazelden
+# Email andrew@andrewhazelden.com
+#
+# Note:
+# The Linux makefile might need some tweaking. I have only 
+# had a chance to try building irixbasic on Mac OS X and IRIX.
+
+INCLUDE = -I/usr/include -I/usr/include/SDL
+LIBDIR  =  
+
+COMPILERFLAGS =  `sdl-config --cflags --libs`
+
+CC = gcc
+CFLAGS = $(COMPILERFLAGS) $(INCLUDE)
+LIBRARIES = -lSDL -lSDL_gfx -lSDL_ttf -lm
+
+all:  irixbasic
+
+irixbasic : irixbasic.o
+	$(CC) $(CFLAGS) -o irixbasic  ubasic.c irixbasic.c tokenizer.c $(LIBDIR) $(LIBRARIES) 
+ 
+clean:
+	rm irixbasic *.o
+	
+go: clean irixbasic
+	./irixbasic
+

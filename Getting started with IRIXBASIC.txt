@@ -1,0 +1,177 @@
+IRIXBASIC Interpreter 0.1 Alpha
+July 31, 2012 - RetroChallenge Edition
+
+Created by Andrew Hazelden
+Based upon uBASIC by Adam Dunkels
+
+IRIXBASIC is a simple BASIC interpreter that was developed for the 2012 Summer RetroChallenge. The goal of this project was to add graphics capabilities to the existing uBASIC interpreter and port it to Silicon Graphics IRIX. The program uses SDL for graphics along with the SDL_ttf and SDL_gfx libraries.
+
+I have included a few sceenshots to show what IRIXBASIC looks like when it is running on IRIX 6.5 on my Silicon Graphics O2 system.
+
+
+Starting IRIXBASIC
+------------------
+
+You need to launch IRIXBASIC from the command line so it knows the path to the IRIXBASIC font, default script, and the program icon.
+
+When you run IRIXBASIC from the command line you have the following options:
+
+Usage: irixbasic <script.bas> [options]
+Options:
+  --window <width> <height> [-fullscreen]
+    Set the size of the main window
+
+
+Here are several command line options you can explore:
+
+You can start irixbasic and launch the default program (scripts/default.bas):
+./irixbasic
+
+You can start irixbasic and launch a specific program:
+./irixbasic scripts/waves.bas
+
+You can start irixbasic and launch a program in a resized window:
+./irixbasic scripts/waves.bas --window 800 600
+
+You can start irixbasic and launch a program in fullscreen mode:
+./irixbasic scripts/waves.bas --window 1280 720 -fullscreen
+
+
+Language Syntax
+---------------
+IRIXBASIC works with the standard BASIC syntax:
+
+Here is an example of a print command:
+10 cls
+20 n = random
+30 print "Your lucky number is: ", n, "."
+40 end
+
+The print command writes text on the screen. You can use words in quotes, numbers, and integer variables, you can add a comma to insert a space between each item, or a semicolon to keep the text together
+
+
+Here is an example that shows a for / next loop:
+10 for x = 1 to 100 step 10
+20 print "loop: ", x
+30 next x
+40 end
+
+The step command is optional and can be used to increment the for next loop faster,
+
+
+Here is an example of an if / then comparison:
+10 c = 5
+20 if c<10 then print "c is less than 10" 
+30 end
+
+
+Here is an example of a goto command:
+10 print "Hello World!"
+20 goto 10
+30 end
+
+
+Programming Notes:
+The BASIC scripts need to use line numbers and the last line of every program should finish with the "end" command. 
+
+Variables in IRIXBASIC are the lowercase letters a-z.
+
+The IRIXBASIC program works with integer based math.
+
+If no script name is provided from the command line the default script will be run. The default script is called "default.bas" and is located in the relative file path:
+scripts/default.bas
+
+The REM command doesn't work at the moment so you can't have comments in the file.
+
+
+I added the following graphics oriented commands during the RetroChallenge:
+
+cls / clear
+Clear the screen using the current backcolor.
+
+forecolor 255, 255, 255
+Set the foreground drawing color using r g b values (0-255)
+	
+backcolor 255, 255, 255 
+Set the background drawing color using r g b values (0-255)
+
+plot x, y
+Draw a colored point using the current foreground color value.
+
+line x1, y1, x2, y2 
+Draw a line onscreen using the current foreground color value.
+
+moveto x1, y1
+Move the position of the next graphics drawing command.
+
+lineto x1, y1
+Draw a line from the last drawing position to the current x / y position using the current foreground color value.
+
+circle x1, y1, radius
+Draws a circle using the current foreground color.
+
+fcircle x1, y1, radius
+Draws a filled circle using the current foreground color 
+
+sleep 1000
+Add a delay in milliseconds. ( 1000 ms = 1 second )
+
+timer
+Elapsed program runtime counter in seconds. The timer output may reset after running for a while.
+
+random
+Generate a random number from 0 to 127.
+
+srand 25
+Use a random seed value to randomize the number generator.
+
+cos 1
+Returns a 7-bit integer cos value. An output of -127=-1,  0=0, and 127=1
+
+sin 1
+Returns a 7-bit integer sin value. An output of -127=-1,  0=0, and 127=1
+
+button
+Returns 1 if the mouse button is pressed and 0 if it is released.
+
+
+Example IRIXBASIC Scripts
+--------------------------
+The following examples are included with IRIXBASIC to get you up and running.
+
+
+boat.bas
+	Draws an ASCII art boat onscreen using the print command.
+
+circles.bas
+	Draws random circles onscreen.
+
+click.bas
+	This demonstrates the mouse "button" command. The script shows a green circle when you click the mouse button and a red circle when the mouse button is up.
+	
+countdown.bas
+	This is a countdown to launch example that uses the sleep command.
+	
+default.bas
+	This is the default program that is run if you don't type in the name of a script.
+	
+hello.bas
+	prints the words Hello World onscreen until you press the escape key to quit.
+	
+light-rays.bas
+	Draws colored lines onscreen using moveto and line
+	
+mega_circles.bas
+	Draws even more random circles onscreen.
+	
+random.bas
+	Prints off 10 random numbers. This demo doesn't the srand function so it has the same result every time.
+	
+text.bas
+	Draws colored text using the forecolor command 
+	
+timer.bas
+	This script starts a 15 second countdown using the timer command.
+	
+waves.bas
+	This shows an integer based wave drawn using cosine.
