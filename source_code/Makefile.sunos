@@ -1,0 +1,30 @@
+# IRIXbasic Version 1.0 makefile for Sun
+# July 2012
+# Created by Andrew Hazelden
+# Email andrew@andrewhazelden.com
+#
+# Sun support added by Mark Wickens
+
+INCLUDE = -I/opt/csw/include/SDL -I/usr/local/include/SDL
+LIBDIR  = -L/opt/csw/lib -L/usr/local/lib
+
+#COMPILERFLAGS =  `sdl-config --cflags --libs`
+COMPILERFLAGS=-g -O2
+
+CC = /opt/sfw/bin/gcc
+CFLAGS = $(COMPILERFLAGS) $(INCLUDE)
+LIBRARIES = -lSDL -lSDL_gfx -lSDL_ttf -lm
+
+
+all:  irixbasic
+
+irixbasic : irixbasic.o
+	$(CC) $(CFLAGS) -o irixbasic  ubasic.c irixbasic.c tokenizer.c $(LIBDIR) $(LIBRARIES)
+ 
+
+clean:
+	rm irixbasic *.o
+	
+
+go: clean irixbasic
+	./irixbasic
