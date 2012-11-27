@@ -16,6 +16,10 @@ The program is based upon uBASIC by Adam Dunkels.
 
 ![IRIXBASIC running in terminal mode on SGI IRIX 6.5](https://raw.github.com/AndrewHazelden/IRIXBASIC/master/screenshots/irixbasic-examples.jpg)
 
+#Watch the IRIXBASIC Overview Video
+http://www.youtube.com/watch?v=8WoTZsFblNc
+
+
 #Get the IRIXBASIC Syntax Highlighter
 If you use TextWrangler or BBEdit you can use the [IRIXBASIC codeless language module](https://github.com/AndrewHazelden/IRIXBASIC-Language-Module-for-TextWrangler-and-BBEdit) for syntax highlighting.
 
