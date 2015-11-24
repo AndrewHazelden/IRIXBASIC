@@ -1,7 +1,10 @@
 #IRIXBASIC
 IRIXBASIC is a simple BASIC interpreter that was developed for the 2012 Summer RetroChallenge. The goal of this project was to add graphics capabilities to the existing uBASIC interpreter and port it to Silicon Graphics IRIX. The program uses SDL for graphics along with the SDL_ttf and SDL_gfx libraries.
 
-The program is based upon uBASIC by Adam Dunkels.
+IRIX BASIC is available under a GPL V3 license. IRIX BASIC is based upon the ubasic.c interpreter by Adam Dunkels.
+
+The IRIX BASIC font files are covered by the [C64 TrueType license](http://style64.org/c64-truetype/license).
+
 
 ##IRIXBASIC Screenshots
 ![IRIXBASIC in the SGI Terminal](https://raw.github.com/AndrewHazelden/IRIXBASIC/master/screenshots/irixbasic-minimized.jpg)
