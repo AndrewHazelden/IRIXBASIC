@@ -29,8 +29,8 @@ If you use TextWrangler or BBEdit you can use the [IRIXBASIC codeless language m
 
 # IRIXBASIC Blog #
 
-You can read more about IRIXBASIC on Andrew's blog:
-[June 31, 2012 Now Presenting IRIXBASIC](http://www.andrewhazelden.com/blog/2012/07/now-presenting-irixbasic/)
+You can read more about IRIXBASIC on Andrew's YouTube Channel:
+[June 31, 2012 Now Presenting IRIXBASIC]([http://www.andrewhazelden.com/blog/2012/07/now-presenting-irixbasic/](https://www.youtube.com/watch?v=8WoTZsFblNc))
 
  
 ### Created by Andrew Hazelden ###
