@@ -21,18 +21,14 @@ The IRIX BASIC font files are covered by the [C64 TrueType license](http://style
 ![IRIXBASIC running in terminal mode on SGI IRIX 6.5](https://raw.github.com/AndrewHazelden/IRIXBASIC/master/screenshots/irixbasic-examples.jpg)
 
 # Watch the IRIXBASIC Overview Video #
+
 http://www.youtube.com/watch?v=8WoTZsFblNc
 
+You can read more about IRIXBASIC on Andrew's YouTube Channel.
 
 # Get the IRIXBASIC Syntax Highlighter #
-If you use TextWrangler or BBEdit you can use the [IRIXBASIC codeless language module](https://github.com/AndrewHazelden/IRIXBASIC-Language-Module-for-TextWrangler-and-BBEdit) for syntax highlighting.
+If you use BBEdit you can use the [IRIXBASIC codeless language module](https://github.com/AndrewHazelden/IRIXBASIC-Language-Module-for-TextWrangler-and-BBEdit) for syntax highlighting.
 
-# IRIXBASIC Blog #
-
-You can read more about IRIXBASIC on Andrew's YouTube Channel:
-[June 31, 2012 Now Presenting IRIXBASIC]([http://www.andrewhazelden.com/blog/2012/07/now-presenting-irixbasic/](https://www.youtube.com/watch?v=8WoTZsFblNc))
-
- 
 ### Created by Andrew Hazelden ###
 For more information check out Andrew Hazelden's Blog: [http://www.andrewhazelden.com](http://www.andrewhazelden.com).
 
