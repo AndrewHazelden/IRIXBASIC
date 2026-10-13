@@ -26,8 +26,8 @@ The IRIX BASIC font files are covered by the [C64 TrueType license](http://style
 
 You can read more about IRIXBASIC on Andrew's YouTube Channel.
 
-YouTube | Now Presenting IRIXBASIC for the 2012 Summer RetroChallenge 
-http://www.youtube.com/watch?v=8WoTZsFblNc
+YouTube | Now Presenting IRIXBASIC for the 2012 Summer RetroChallenge  
+http://www.youtube.com/watch?v=8WoTZsFblNc  
 
 # Get the IRIXBASIC Syntax Highlighter #
 If you use BBEdit you can use the [IRIXBASIC codeless language module](https://github.com/AndrewHazelden/IRIXBASIC-Language-Module-for-TextWrangler-and-BBEdit) for syntax highlighting.
