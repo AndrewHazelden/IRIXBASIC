@@ -1,8 +1,10 @@
 # IRIXBASIC #
 
+Created By: Andrew Hazelden
+
 IRIXBASIC is a simple BASIC interpreter that was developed for the 2012 Summer RetroChallenge. The goal of this project was to add graphics capabilities to the existing uBASIC interpreter and port it to Silicon Graphics IRIX. The program uses SDL for graphics along with the SDL_ttf and SDL_gfx libraries.
 
-IRIX BASIC is available under a GPL V3 license. IRIX BASIC is based upon the ubasic.c interpreter by Adam Dunkels.
+IRIX BASIC is available under a GPL V3 license. IRIX BASIC is based upon the "ubasic.c" interpreter by Adam Dunkels.
 
 The IRIX BASIC font files are covered by the [C64 TrueType license](http://style64.org/c64-truetype/license).
 
@@ -22,17 +24,15 @@ The IRIX BASIC font files are covered by the [C64 TrueType license](http://style
 
 # Watch the IRIXBASIC Overview Video #
 
-http://www.youtube.com/watch?v=8WoTZsFblNc
-
 You can read more about IRIXBASIC on Andrew's YouTube Channel.
+
+YouTube | Now Presenting IRIXBASIC for the 2012 Summer RetroChallenge 
+http://www.youtube.com/watch?v=8WoTZsFblNc
 
 # Get the IRIXBASIC Syntax Highlighter #
 If you use BBEdit you can use the [IRIXBASIC codeless language module](https://github.com/AndrewHazelden/IRIXBASIC-Language-Module-for-TextWrangler-and-BBEdit) for syntax highlighting.
 
-### Created by Andrew Hazelden ###
-For more information check out Andrew Hazelden's Blog: [http://www.andrewhazelden.com](http://www.andrewhazelden.com).
 
-* * *
+### Contact Andrew Hazelden
 
-### Andrew Hazelden
 If you would like to get in touch with me you can send me an email [andrew@andrewhazelden.com](mailto:andrew@andrewhazelden.com).
